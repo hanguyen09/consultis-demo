@@ -1,0 +1,103 @@
+// 1. Xem font chữ
+// 2. Xem màu sắc #013c74 #5cc35c
+*{margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+    font-family: LatoBold;
+    src: url(assets/font/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: OSBold;
+    src: url(assets/font/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OSRegular;
+    src: url(assets/font/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OSSemiBold;
+    src: url(assets/font/OpenSans-SemiBold.ttf);
+}
+.text-blue{color: #013c74;}
+.text-green{color: #5cc35c;}
+.container{max-width: 1170px;}
+html{font-size: 62.5%;}
+body{font-family: OSRegular; font-size: 1.4rem;}
+
+.logo{
+    a{
+        img{margin-right: 2rem;}
+        text-decoration: none;
+        font-size: 2.4rem;
+        font-family: OSBold;
+    }
+    
+    width: 4rem;
+    margin: 2rem 0;
+}
+.nav-bar{
+    ul{
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #013c74;
+                font-family: OSBold;
+            }
+            button{
+                text-transform: uppercase;
+                padding: 1.2rem 4rem;
+                border-radius: 4rem;
+                background-color: #013c74;
+                color: white;
+                font-family: LatoBold;
+            }
+            :hover{color:#5cc35c}
+            margin-left: 4rem;
+        }
+    }  
+}
+
+// footer
+footer{
+    background-color: #252525;
+    color: white;
+    
+    .container{
+        padding: 6rem 0;
+        .logo{margin: 0;}
+        .new-latest img{
+            width: 7rem;
+            height: 7rem;
+        }
+        .ins img{
+            width: 8rem;
+            height: 8rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            :hover{color: #5cc35c;}
+        }
+        
+    }
+    
+    .copy-right{
+        background-color: #1f1f1f;
+    }
+    h2{
+        font-family: OSBold; 
+        font-size: 1.8rem; 
+        padding: 1.1rem 0;
+        margin: 0;
+    }
+    h3{font-family: OSBold;}
+    .quick-link ul li {
+        a{text-decoration: none;  }
+        padding-bottom: 1rem;
+        :hover{color: #5cc35c !important;}
+    }
+    
+}
